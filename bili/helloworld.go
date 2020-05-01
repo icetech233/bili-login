@@ -16,6 +16,8 @@ func Demo1() {
 
 	WriteFile(q, "login_qrcode.png")
 
+	fmt.Print(q.ToString(true))
+
 }
 
 // qrcode demo
