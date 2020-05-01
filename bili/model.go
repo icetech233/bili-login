@@ -1,14 +1,19 @@
 package bili
 
-var qrcode_content = "qrcode_content"
+var qrcode_content = "QRcode_content"
 
-const err_qrcode_new = "qrcode new error"
+const (
+	pic_size       = 256
+	err_qrcode_new = "New QRcode Error"
+)
 
+// Http Base Model
 type BiliApiBaseModel struct {
 	Code int           `json:"code"`
 	Data LoginUrlModel `json:"data"`
 }
 
+// QRcode get OauthKey
 type LoginUrlModel struct {
 	Url      string `json:"url"`
 	OauthKey string `json:"oauthKey"`

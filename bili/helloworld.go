@@ -2,9 +2,6 @@ package bili
 
 import (
 	"fmt"
-	"image/color"
-
-	"github.com/skip2/go-qrcode"
 )
 
 // hello world
@@ -12,16 +9,25 @@ func BiliHello() {
 	fmt.Println("Bilibili Hello World !")
 }
 
-// qrcode demo
-func demo() {
+func Demo1() {
 
-	qrcode_content = "http://www.bilibili.com"
-	//var q *qrcode.QRCode
-	q, err := qrcode.New(qrcode_content, qrcode.Low)
-	if err != nil {
-		fmt.Println(err_qrcode_new)
-		//return nil, err
-	}
-	q.BackgroundColor = color.White
-	q.ForegroundColor = color.RGBA{0, 161, 214, 255}
+	login_model := GetLoginUrl()
+	q := GenerateQrCode(login_model)
+
+	WriteFile(q, "login_qrcode.png")
+
+}
+
+// qrcode demo
+func demo_qrcode() {
+
+	// qrcode_content = "http://www.bilibili.com"
+	// //var q *qrcode.QRCode
+	// q, err := qrcode.New(qrcode_content, qrcode.Low)
+	// if err != nil {
+	// 	fmt.Println(err_qrcode_new)
+	// 	//return nil, err
+	// }
+	// q.BackgroundColor = color.White
+	// q.ForegroundColor = color.RGBA{0, 161, 214, 255}
 }
