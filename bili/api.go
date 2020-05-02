@@ -11,7 +11,7 @@ import (
 const get_login_url = "https://passport.bilibili.com/qrcode/getLoginUrl"
 const get_login_info = "https://passport.bilibili.com/qrcode/getLoginInfo"
 
-// Get Login Url
+// Get Login Url 获取二维码的 地址
 func GetLoginUrl() LoginUrlModel {
 	resp, err := http.Get(get_login_url)
 	if err != nil {
