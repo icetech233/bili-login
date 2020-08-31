@@ -1,4 +1,4 @@
-module github.com/handashuai/bili-login
+module github.com/icetech233/bili-login
 
 go 1.13
 
