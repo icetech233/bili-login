@@ -1,7 +1,5 @@
 module github.com/icetech233/bili-login
 
-go 1.13
+go 1.14
 
-require (
-	github.com/skip2/go-qrcode v0.0.0-20191027152451-9434209cb086 // indirect
-)
+require github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e

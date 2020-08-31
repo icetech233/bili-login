@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/handashuai/bili-login/bili"
+	"github.com/icetech233/bili-login/bili"
 )
 
 func main() {
